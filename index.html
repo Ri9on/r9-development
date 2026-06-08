@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R9 Development — Premium FiveM Development</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="R9 Development — Premium FiveM development, custom scripting, and server solutions.">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand">
+        <img src="assets/logo.svg" alt="R9 Development" class="logo">
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" data-i18n="nav-services">Services</a>
+        <a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a>
+        <a href="#process" data-i18n="nav-process">Process</a>
+        <a href="#pricing" data-i18n="nav-pricing">Pricing</a>
+        <a href="#contact" class="cta small" data-i18n="nav-quote">Get a Quote</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
+      <div class="language-selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <img src="assets/logo.svg" alt="R9 Development" class="hero-logo">
+        <h1 data-i18n="hero-title">Premium FiveM Development & Custom Scripting</h1>
+        <p class="sub" data-i18n="hero-subtitle">Building high-performance custom systems, scripts, and server solutions for serious FiveM communities.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn primary" data-i18n="hero-btn1">View Services</a>
+          <a href="#contact" class="btn outline" data-i18n="hero-btn2">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-services">Services</h2>
+        <div class="grid services-grid">
+          <article class="card service-card">
+            <i class="fa-solid fa-code icon"></i>
+            <h3 data-i18n="service-1-title">Custom FiveM Scripts</h3>
+            <p data-i18n="service-1-desc">Tailored scripts focused on performance, security, and gameplay fidelity for your server.</p>
+          </article>
+          <article class="card service-card">
+            <i class="fa-solid fa-cubes-stacked icon"></i>
+            <h3 data-i18n="service-2-title">Framework Development</h3>
+            <p data-i18n="service-2-desc">Robust framework foundations with modular patterns for easy expansion and maintenance.</p>
+          </article>
+          <article class="card service-card">
+            <i class="fa-solid fa-palette icon"></i>
+            <h3 data-i18n="service-3-title">UI/UX & NUI Design</h3>
+            <p data-i18n="service-3-desc">Modern, responsive NUI interfaces with clean UX optimized for players and admins.</p>
+          </article>
+          <article class="card service-card">
+            <i class="fa-solid fa-tachometer-alt-fast icon"></i>
+            <h3 data-i18n="service-4-title">Optimization & Performance</h3>
+            <p data-i18n="service-4-desc">Profiling and optimisation to reduce lag, CPU usage, and improve server throughput.</p>
+          </article>
+          <article class="card service-card">
+            <i class="fa-solid fa-server icon"></i>
+            <h3 data-i18n="service-5-title">Server Setup & Configuration</h3>
+            <p data-i18n="service-5-desc">Secure server provisioning, resource management, and configuration for stability.</p>
+          </article>
+          <article class="card service-card">
+            <i class="fa-solid fa-bug icon"></i>
+            <h3 data-i18n="service-6-title">Bug Fixing & Maintenance</h3>
+            <p data-i18n="service-6-desc">Rapid triage, patching, and long-term maintenance for production servers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section why">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-why">Why Choose R9 Development</h2>
+        <div class="grid feature-grid">
+          <div class="feature card"> <i class="fa-solid fa-bolt"></i><h4 data-i18n="feature-1">High-performance code</h4></div>
+          <div class="feature card"> <i class="fa-solid fa-lock"></i><h4 data-i18n="feature-2">Secure & scalable</h4></div>
+          <div class="feature card"> <i class="fa-solid fa-layer-group"></i><h4 data-i18n="feature-3">Clean architecture</h4></div>
+          <div class="feature card"> <i class="fa-solid fa-headset"></i><h4 data-i18n="feature-4">Fast support</h4></div>
+          <div class="feature card"> <i class="fa-solid fa-cog"></i><h4 data-i18n="feature-5">Custom-built systems</h4></div>
+          <div class="feature card"> <i class="fa-solid fa-comments"></i><h4 data-i18n="feature-6">Professional communication</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-portfolio">Portfolio</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All Projects</button>
+          <button class="filter-btn" data-filter="systems" data-i18n="filter-systems">Systems</button>
+          <button class="filter-btn" data-filter="frameworks" data-i18n="filter-frameworks">Frameworks</button>
+          <button class="filter-btn" data-filter="ui" data-i18n="filter-ui">UI/UX</button>
+        </div>
+        <div class="grid portfolio-grid">
+          <figure class="project card" data-category="systems">
+            <div class="thumb placeholder">Advanced Police MDT</div>
+            <figcaption>
+              <h4>Advanced Police MDT</h4>
+              <p>Real-time dispatch, records, and integrations.</p>
+              <p class="case-study"><strong>Challenge:</strong> High network load with 100+ concurrent players. <strong>Solution:</strong> Optimized queries and debounced updates. <strong>Result:</strong> 60% reduction in network usage.</p>
+            </figcaption>
+          </figure>
+          <figure class="project card" data-category="systems">
+            <div class="thumb placeholder">Custom Gang System</div>
+            <figcaption>
+              <h4>Custom Gang System</h4>
+              <p>Gang territories, interactions, and economics.</p>
+              <p class="case-study"><strong>Challenge:</strong> Complex territory calculations. <strong>Solution:</strong> Implemented spatial indexing. <strong>Result:</strong> Territory checks now instant.</p>
+            </figcaption>
+          </figure>
+          <figure class="project card" data-category="systems">
+            <div class="thumb placeholder">Inventory System</div>
+            <figcaption>
+              <h4>Inventory System</h4>
+              <p>Fast, network-optimized inventory with hotkeys.</p>
+              <p class="case-study"><strong>Challenge:</strong> Inventory lag during combat. <strong>Solution:</strong> Client-side predictions + server sync. <strong>Result:</strong> Snappy 60fps UI.</p>
+            </figcaption>
+          </figure>
+          <figure class="project card" data-category="systems">
+            <div class="thumb placeholder">Racing & Leaderboards</div>
+            <figcaption>
+              <h4>Racing & Leaderboards</h4>
+              <p>Leaderboards, timing systems, and race modes.</p>
+              <p class="case-study"><strong>Challenge:</strong> Anti-cheat racing validation. <strong>Solution:</strong> Server-side verification + replay validation. <strong>Result:</strong> 99.8% cheater detection rate.</p>
+            </figcaption>
+          </figure>
+          <figure class="project card" data-category="frameworks">
+            <div class="thumb placeholder">Job Framework</div>
+            <figcaption>
+              <h4>Job Framework</h4>
+              <p>Modular job systems with pay and progress tracking.</p>
+              <p class="case-study"><strong>Challenge:</strong> Scaling to 50+ job types. <strong>Solution:</strong> Plugin-based architecture. <strong>Result:</strong> 0 code duplication.</p>
+            </figcaption>
+          </figure>
+          <figure class="project card" data-category="ui">
+            <div class="thumb placeholder">Server Dashboard</div>
+            <figcaption>
+              <h4>Server Dashboard</h4>
+              <p>Administration dashboard for monitoring and resource control.</p>
+              <p class="case-study"><strong>Challenge:</strong> Real-time monitoring for admins. <strong>Solution:</strong> WebSocket live updates. <strong>Result:</strong> <1s data refresh.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h3 data-i18n="cta-title">Ready to elevate your server?</h3>
+        <p data-i18n="cta-desc">Let's discuss your project requirements and find the perfect solution.</p>
+        <a href="#contact" class="btn primary" data-i18n="cta-button">Schedule Consultation</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-about">About R9 Development</h2>
+        <div class="about-grid">
+          <div class="about-content">
+            <h3 data-i18n="about-title">Who We Are</h3>
+            <p data-i18n="about-text">R9 Development is a dedicated team of FiveM specialists with over 50 combined years of experience building enterprise-grade roleplay systems. We've worked on some of the largest and most successful FiveM servers, handling millions of player interactions.</p>
+            <p data-i18n="about-text2">Our focus is on performance, stability, and user experience — delivering code that runs flawlessly at scale.</p>
+          </div>
+          <div class="stats">
+            <div class="stat-card card">
+              <div class="stat-number">50+</div>
+              <div class="stat-label" data-i18n="stat-servers">Servers Powered</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">10M+</div>
+              <div class="stat-label" data-i18n="stat-players">Player Interactions</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">99.9%</div>
+              <div class="stat-label" data-i18n="stat-uptime">Uptime SLA</div>
+            </div>
+            <div class="stat-card card">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label" data-i18n="stat-support">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-process">Our Process</h2>
+        <ol class="timeline">
+          <li><strong data-i18n="process-1">Consultation</strong><span data-i18n="process-1-desc">Discuss goals, scope, and constraints.</span></li>
+          <li><strong data-i18n="process-2">Planning</strong><span data-i18n="process-2-desc">Architecture, milestones, and deliverables.</span></li>
+          <li><strong data-i18n="process-3">Development</strong><span data-i18n="process-3-desc">Implementation, testing, and reviews.</span></li>
+          <li><strong data-i18n="process-4">Delivery & Support</strong><span data-i18n="process-4-desc">Deployment, handoff, and ongoing support.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-testimonials">Testimonials</h2>
+        <div class="testimonials-slider card" id="testimonials">
+          <blockquote class="testimonial active">
+            <p data-i18n="testimonial-1">"R9 rebuilt our MDT and the difference was night and day — stability and speed we needed."</p><cite data-i18n="testimonial-1-author">- DarkCity RP, Owner</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p data-i18n="testimonial-2">"Custom gang system integrated flawlessly, and players love the UI."</p><cite data-i18n="testimonial-2-author">- Eastside Roleplay, Admin</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p data-i18n="testimonial-3">"Quick support and professional communication throughout the project."</p><cite data-i18n="testimonial-3-author">- Nova Servers, Manager</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-pricing">Pricing</h2>
+        <div class="grid pricing-grid">
+          <div class="card price-card">
+            <h3 data-i18n="pricing-starter">Starter</h3>
+            <ul>
+              <li data-i18n="pricing-starter-1">Small scripts</li>
+              <li data-i18n="pricing-starter-2">Bug fixes</li>
+              <li data-i18n="pricing-starter-3">Basic support</li>
+            </ul>
+            <div class="price" data-i18n="pricing-contact">Contact</div>
+            <a href="#contact" class="btn outline" data-i18n="pricing-started">Get Started</a>
+          </div>
+          <div class="card price-card popular">
+            <h3 data-i18n="pricing-professional">Professional</h3>
+            <ul>
+              <li data-i18n="pricing-professional-1">Custom systems</li>
+              <li data-i18n="pricing-professional-2">UI integration</li>
+              <li data-i18n="pricing-professional-3">Priority support</li>
+            </ul>
+            <div class="price" data-i18n="pricing-contact">Contact</div>
+            <a href="#contact" class="btn primary" data-i18n="pricing-choose">Choose Professional</a>
+          </div>
+          <div class="card price-card">
+            <h3 data-i18n="pricing-enterprise">Enterprise</h3>
+            <ul>
+              <li data-i18n="pricing-enterprise-1">Large-scale projects</li>
+              <li data-i18n="pricing-enterprise-2">Full framework dev</li>
+              <li data-i18n="pricing-enterprise-3">Long-term support</li>
+            </ul>
+            <div class="price" data-i18n="pricing-contact">Contact</div>
+            <a href="#contact" class="btn outline" data-i18n="pricing-discuss">Discuss Enterprise</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section newsletter">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-newsletter">Stay Updated</h2>
+        <p class="newsletter-desc" data-i18n="newsletter-desc">Get FiveM development tips, server optimization tricks, and project updates delivered to your inbox.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" data-i18n-placeholder="newsletter-email" required>
+          <button type="submit" class="btn primary" data-i18n="newsletter-button">Subscribe</button>
+          <div id="newsletterStatus" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section-contact">Ready to level up your FiveM server?</h2>
+        <div class="contact-wrap grid">
+          <div class="card contact-info">
+            <h3 data-i18n="contact-title">Get in touch</h3>
+            <p><strong data-i18n="contact-discord">Discord:</strong> <a href="https://discord.gg/nkJm6SDP8r" target="_blank" rel="noopener noreferrer">Join our Discord</a></p>
+            <p><strong data-i18n="contact-email">Email:</strong> rigonhoxhaj09@gmail.com</p>
+            <p class="muted" data-i18n="contact-prefer">Prefer Discord for quick responses.</p>
+            <a href="https://discord.gg/nkJm6SDP8r" target="_blank" rel="noopener noreferrer" class="btn outline" data-i18n="contact-discord-btn">Join Discord</a>
+          </div>
+          <form class="card contact-form" id="contactForm">
+            <label><span data-i18n="contact-name">Name</span> <input type="text" name="name" required></label>
+            <!-- Honeypot field: leave this blank. Visible to bots but hidden from users. -->
+            <label class="honeypot-label" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">If you are human, leave this field blank: <input type="text" name="website" autocomplete="off" tabindex="-1"></label>
+            <label><span data-i18n="contact-email-label">Email</span> <input type="email" name="email" required></label>
+            <label><span data-i18n="contact-discord-label">Discord</span> <input type="text" name="discord"></label>
+            <label><span data-i18n="contact-message">Message</span> <textarea name="message" rows="5" required></textarea></label>
+            <div class="form-actions">
+              <button class="btn primary" type="submit" data-i18n="contact-send">Send Message</button>
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand-row">
+        <img src="assets/logo.svg" alt="R9" class="logo small">
+        <div>© <span id="year">2026</span> R9 Development — <span data-i18n="footer-copyright">All rights reserved.</span></div>
+      </div>
+      <div class="socials">
+        <a href="https://discord.gg/nkJm6SDP8r" aria-label="Discord" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/translations.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="js/main.js" defer></script>
+  
+  
+
+  <!-- Tawk Live Chat Widget -->
+  <script>
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_TAWK_ID/1234567890';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+</body>
+</html>
