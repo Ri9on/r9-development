@@ -242,7 +242,7 @@ const translations = {
     // About Section
     "section-about": "Über R9 Development",
     "about-title": "Wer wir sind",
-    "about-text": "R9 Development ist ein spezialisiertes Team von FiveM-Experten mit über 50 Jahren kombinierter Erfahrung in der Entwicklung von Enterprise-Roleplay-Systemen. Wir haben an einigen der größten und erfolgreichsten FiveM-Server gearbeitet.",
+    "about-text": "R9 Development ist ein spezialisiertes Team von FiveM-Experten mit über 7 Jahren kombinierter Erfahrung in der Entwicklung von Enterprise-Roleplay-Systemen. Wir haben an einigen der größten und erfolgreichsten FiveM-Server gearbeitet.",
     "about-text2": "Unser Fokus liegt auf Performance, Stabilität und Benutzererfahrung — mit Code, der im großen Maßstab fehlerlos läuft.",
     "stat-servers": "Server unterstützt",
     "stat-players": "Spielerinteraktionen",
